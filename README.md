@@ -16,7 +16,7 @@ It is usually in the '/lib/modules/(Your Kernel Version)/build' directory
     
 ###Install module
 
-   sudo insmod gpio_switch.ko
+    sudo insmod gpio_switch.ko
    
 ###Remove module
 
