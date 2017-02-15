@@ -48,7 +48,7 @@ static int __init switch_init(void){
     irqNumber = gpio_to_irq(gpioSwitch);
     result = request_irq(irqNumber,                           // 请求的中断号
                          (irq_handler_t) switch_irq_handler,  // 处理中断函数
-                         IRQF_TRIGGER_RISING,                 // 中断触发
+                         IRQF_TRIGGER_HIGH,                 // 中断触发
                          "switch_irq_handler",                // 用于 /proc/interrupts 中的所有者名称
                          NULL);
 
